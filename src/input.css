@@ -7,3 +7,34 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (orientation: portrait){
+    #other-options{
+        width: 28rem;
+    }
+
+    #weather-information{
+        padding: 2rem;
+    }
+    
+    #temperature{
+        font-size: 5rem;
+    }
+
+    #location{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .other-details{
+        font-size: .9rem;
+    }
+
+    #weather-logo{
+        font-size: 2.75rem;
+    }
+
+    #weather-note{
+        margin-left: .25rem;
+    }
+}

@@ -18,23 +18,22 @@
     </div>
     <section id="main-weather-container" class="flex flex-col justify-between h-screen">
         <h2 class="text-white font-heading-font-poppins font-semibold text-xl p-12">The Weather</h2>
-        <div id="weather-information" class="flex w-96 h-96 items-center p-20 gap-4">
-            <h1 id="temperature" class="text-white font-para-font-roboto font-bold text-main-temp select-none">08°</h1>
+        <div id="weather-information" class="flex w-full h-96 items-center p-20 gap-4">
+            <h1 id="temperature" class="text-white font-para-font-roboto font-semibold text-main-temp select-none drop-shadow-lg">08°</h1>
             <div class="additional-details flex flex-col">
-                <h2 class="font-para-font-roboto text-white select-none text-6xl mt-10">Location</h2>
-                <div class="other-details flex gap-2 text-lg">
+                <h2 class="font-para-font-roboto text-white select-none text-6xl mt-5" id="location">Location</h2>
+                <div class="other-details flex gap-2 text-lg mt-2">
                     <p class="text-white" id="time">Time</p>
                     <span class="text-white">-</span>
                     <p class="text-white" id="day-date">Day and Date</p>
                 </div>
             </div>
             <div id="weather-note" class="flex flex-col mt-7 gap-2 ml-2">
-                <ion-icon name="rainy-outline" class="text-white text-7xl"></ion-icon>
-                <p class="text-white self-center">Rainy</p>
+                <ion-icon name="rainy-outline" class="text-white text-7xl" id="weather-logo"></ion-icon>
+                <p class="text-white self-center" id="weather-type">Condition</p>
             </div>
         </div>
     </section>
     <script type="module" src="../JavaScript/main.js"></script>
-    <script type="module" src="../JavaScript/other-details.js"></script>
 </body>
 </html>

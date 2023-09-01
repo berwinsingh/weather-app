@@ -11,7 +11,7 @@ module.exports = {
         "main-temp":"9rem",
       },
       width:{
-        "container-width":"50rem",
+        "container-width":"45rem",
       },
     },
   },
