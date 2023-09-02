@@ -1,4 +1,5 @@
 import { currentWeatherData } from "./main.js";
+import { saveToLocalStorage } from "./save.js";
 
 const searchButton = document.getElementById("search-btn");
 const locationSearchInput = document.getElementById("location-search");
@@ -15,6 +16,7 @@ function updateSearchQuery (){
 
         currentWeatherData().then(() => {
             errorNote.classList.add("display");
+            saveToLocalStorage();
         }).catch((error) => {
             errorNote.classList.remove("display");
         });
