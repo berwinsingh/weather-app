@@ -17,11 +17,11 @@ export default function checkCondition(weather){
     } 
     if (weather === "Rainy") {
         weatherLogo.setAttribute ("name",conditionIcons.rainy);
-        body.style.backgroundImage = `url("${weatherImg[0]})`;
+        body.style.backgroundImage = `url("${weatherImg[0]}")`;
     }
     if (weather === "Sunny") {
         weatherLogo.setAttribute ("name",conditionIcons.sunny);
-        body.style.backgroundImage = `url("${weatherImg[1]})`;
+        body.style.backgroundImage = `url("${weatherImg[1]}")`;
     }
     if (weather === "Partly cloudy") {
         weatherLogo.setAttribute ("name",conditionIcons.partlycloudy);
