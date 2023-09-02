@@ -22,10 +22,12 @@
             <button type="button" id="search-btn"><ion-icon name="search-outline" class="text-white bg-blue-600 text-4xl p-5 hover:bg-blue-700"></ion-icon></button>
         </div>
         <hr class="mt-3 mx-4 opacity-50">
-        <div id="other-details" class="flex flex-col gap-3 pl-5">
+        <div id="other-details" class="flex flex-col gap-3 pl-5 select-none">
             <h2 class="text-white font-heading-font-poppins font-semibold text-xl pt-7">Other Details</h2>
-            <p class="text-white text-xl mt-3" id="country">Country</p>
-            <p class="text-white text-xl" id="region">Region</p>
+            <p class="text-white text-xl mt-3 ml-2">Country: <span id="country" class="ml-1 font-bold"></span></p>
+            <p class="text-white text-xl ml-2">Region: <span id="region" class="ml-1 font-bold"></span></p>
+            <p class="text-white text-xl ml-2">Continent: <span id="continent" class="ml-1 font-bold"></span></p>
+            <p class="text-white text-xl ml-2">Feels Like: <span id="feels-like" class="ml-1 font-bold"></span></p>
         </div>
     </section>
     <section id="main-weather-container" class="flex flex-col justify-between h-screen select-none">
