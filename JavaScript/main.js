@@ -18,7 +18,7 @@ const continent = document.getElementById("continent");
 const feelsLike = document.getElementById("feels-like");
 
 const weatherType = document.getElementById("weather-type");
-
+// https://cors-anywhere.herokuapp.com/
 
 const weatherAPI = "fe88d13146604bba9c871846230109";
 
