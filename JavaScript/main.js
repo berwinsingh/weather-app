@@ -23,7 +23,7 @@ const weatherType = document.getElementById("weather-type");
 const weatherAPI = "fe88d13146604bba9c871846230109";
 
 async function currentWeatherData (){
-    const response = await fetch(`https://cors-anywhere.herokuapp.com/http://api.weatherapi.com/v1/current.json?key=${weatherAPI}&q=${getLocation}`,{mode:"cors"});
+    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${weatherAPI}&q=${getLocation}`,{mode:"cors"});
     const currentWeather = await response.json();
 
     //Extracting values from the JSON received after pinging the API server
