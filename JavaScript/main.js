@@ -11,6 +11,11 @@ const locationName = document.getElementById("location");
 const localTime = document.getElementById("time");
 const dayDate = document.getElementById("day-date");
 
+
+const hamburgerMenu = document.getElementById("hamburger");
+const otherOptions = document.getElementById("other-options");
+const styleCompute = window.getComputedStyle(otherOptions);
+
 //Selecting other details options
 const country = document.getElementById("country");
 const region = document.getElementById("region");
@@ -18,11 +23,11 @@ const continent = document.getElementById("continent");
 const feelsLike = document.getElementById("feels-like");
 
 const weatherType = document.getElementById("weather-type");
-// https://cors-anywhere.herokuapp.com/
 
 const weatherAPI = "fe88d13146604bba9c871846230109";
 
 async function currentWeatherData (){
+    // https://cors-anywhere.herokuapp.com/
     const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${weatherAPI}&q=${getLocation}`,{mode:"cors"});
     const currentWeather = await response.json();
 
@@ -53,6 +58,12 @@ async function currentWeatherData (){
     //Matches the weather condition with the right icon and background
     checkCondition(currentCondition)
 }
+
+hamburgerMenu.addEventListener("click",()=>{
+    if(otherOptions){
+
+    }
+})
 
 currentWeatherData()
 

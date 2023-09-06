@@ -534,6 +534,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .float-right {
   float: right;
 }
@@ -728,6 +736,14 @@ body{
   background-size: cover;
 }
 
+#hamburger{
+  left: 95%;
+  top: 5.5%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
 .display{
   display: none;
 }
@@ -757,6 +773,8 @@ input[type="text"]:focus{
   left: 80%;
   top: 1%;
 }
+
+/* Optimizing for different screens */
 
 @media screen and (orientation: portrait){
   #other-options{
@@ -810,6 +828,45 @@ input[type="text"]:focus{
 
   #other-details h2{
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width:875px) and (max-width:1399px){
+  #temperature{
+    font-size: 5.75rem;
+  }
+
+  #weather-information{
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  #other-options{
+    width: 25rem;
+  }
+
+  #location-search{
+    width: 10rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:870px) {
+  #other-options{
+    display: none;
+  }
+
+  #hamburger{
+    display: inline;
+  }
+
+  #temperature{
+    font-size: 4.75rem;
+  }
+
+  #weather-information{
+    padding: 2rem;
+    padding-bottom: 0;
   }
 }
 
